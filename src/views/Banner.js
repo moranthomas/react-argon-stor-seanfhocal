@@ -12,7 +12,9 @@ const Banner = () => {
 }
 
 const logoStyle = {
-
+    marginTop: '20px',
+    marginBottom: '50px',
+    width: '400px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center'
