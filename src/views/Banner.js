@@ -1,21 +1,33 @@
 import React from 'react'
 import logo from '../assets/img/stor/front cover.png'
+import amazonImg from '../assets/img/stor/Amazon-btn.png';
+
+
+const amazonStyle = {
+  float: 'center',
+  marginTop: '30px',
+  width: '100px'
+};
 
 const Banner = () => {
   return (
     <div>
-      <header className='center'>
+      <header>
         <img src={logo} alt='' style={logoStyle} />
       </header>
+
+      <img src={amazonImg} style={amazonStyle}  alt='' />
+
     </div>
   )
 }
 
 const logoStyle = {
-    marginTop: '20px',
+    marginLeft: '50px',
     marginBottom: '50px',
+    marginTop: '-50px',
     width: '400px',
-    display: 'flex',
+    display: 'inline-block',
     alignItems: 'center',
     justifyContent: 'center'
 }
