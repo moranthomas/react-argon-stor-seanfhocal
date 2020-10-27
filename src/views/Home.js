@@ -29,7 +29,7 @@ import Hero from "./IndexSections/Hero.js";
 import Navbars from "./IndexSections/Navbars.js";
 import Tabs from "./IndexSections/Tabs.js";
 
-class Index extends React.Component {
+class Home extends React.Component {
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
@@ -58,4 +58,4 @@ class Index extends React.Component {
   }
 }
 
-export default Index;
+export default Home;
