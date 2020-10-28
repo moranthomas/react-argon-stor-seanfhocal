@@ -5,12 +5,12 @@ import '../Cards.css'
 const ProverbItem = ({ item }) => {
 
   return (
-    <div className='card'>
-      <div className='card-inner'>
-        <div className='card-front'>
+    <div className='proverbCard'>
+      <div className='proverbCard-inner'>
+        <div className='proverbCard-front'>
           <img src={images[item.char_id].icon} alt='' />
         </div>
-        <div className='card-back'>
+        <div className='proverbCard-back'>
           <h1>{item.proverb}</h1>
           <br/>
           <ul>

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/img/stor/front cover.png'
+import frontCover from '../assets/img/stor/front cover.png'
 import amazonImg from '../assets/img/stor/Amazon-btn.png';
 
 
@@ -13,7 +13,7 @@ const Banner = () => {
   return (
     <div>
       <header>
-        <img src={logo} alt='' style={logoStyle} />
+        <img src={frontCover} alt='' style={frontCoverStyle} />
       </header>
 
       <img src={amazonImg} style={amazonStyle}  alt='' />
@@ -22,7 +22,9 @@ const Banner = () => {
   )
 }
 
-const logoStyle = {
+// Need media query for mobile for this!
+
+const frontCoverStyle = {
     marginLeft: '50px',
     marginBottom: '50px',
     width: '400px',

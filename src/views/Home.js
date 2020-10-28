@@ -5,7 +5,7 @@ import { Container } from "reactstrap";
 
 // core components
 import Navbar from "components/Navbars/NavbarOne.js";
-import CardsFooter from "components/Footers/CardsFooter.js";
+import SimpleFooter from "components/Footers/SimpleFooter.js";
 
 // index page sections
 import Hero from "./IndexSections/Hero.js";
@@ -13,11 +13,13 @@ import Navbars from "./IndexSections/Navbars.js";
 import Tabs from "./IndexSections/Tabs.js";
 
 class Home extends React.Component {
+
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;
   }
+
   render() {
     return (
       <>
@@ -35,7 +37,7 @@ class Home extends React.Component {
             </Container>
           </section>
         </main>
-        <CardsFooter />
+        <SimpleFooter />
       </>
     );
   }

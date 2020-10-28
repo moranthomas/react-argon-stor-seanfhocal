@@ -28,38 +28,7 @@ class Landing extends React.Component {
 
   render() {
 
-    const backgroundStyle = {
-      background: 'linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,121,113,1) 11%, rgba(0,255,246,0) 35%)',
-    };
-
-    const headerStyle = {
-      color: '#fff',
-      textAlign: 'center',
-      padding: '10px'
-    }
-
-    const headerTextStyle = {
-        marginTop: '20px',
-        marginBottom: '10px',
-        fontSize: '53px',
-        textAlign: 'center',
-        color: '#f5d742',
-        textDecoration: 'none'
-    }
-
-    var h2Style = {
-      textAlign: 'center'
-    }
-
-    var mainTextStyle = {
-      marginTop: '20px',
-      textAlign: 'center',
-      fontSize: '20px',
-      color: 'white'
-    }
-
     const isLoading = false;  //hardcode for now as async timer method not working
-
 
     const proverb1 = {
       char_id: '0',
@@ -93,6 +62,39 @@ class Landing extends React.Component {
       proverb1, proverb2, proverb3, proverb4
     ];
 
+    const backgroundStyle = {
+      background: 'linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,121,113,1) 11%, rgba(0,255,246,0) 35%)',
+    };
+
+    const headerStyle = {
+      color: '#fff',
+      textAlign: 'center',
+      padding: '10px'
+    };
+
+    const headerTextStyle = {
+        marginTop: '20px',
+        marginBottom: '10px',
+        fontSize: '53px',
+        fontWeight: '500',
+        textAlign: 'center',
+        color: '#f5d742',
+        textDecoration: 'none'
+    };
+
+    var h2Style = {
+      fontSize: '20px',
+      color: 'white',
+      marginBottom: '20px',
+      textAlign: 'center'
+    };
+
+    var mainTextStyle = {
+      marginTop: '20px',
+      textAlign: 'center',
+      fontSize: '20px',
+      color: 'white'
+    };
 
     return (
       <>
@@ -117,36 +119,43 @@ class Landing extends React.Component {
                   <Row>
                     <Col lg="3" />
                     <Col lg="6" style={h2Style}>
-                      <h2 className="display-4 text-white">
-                        A Collection of Irish Proverbs{" "}
+                      <h2 style={h2Style}>
+                        A Collection of Irish Proverbs beautifully illustrated along with explanations and translations of each
                       </h2>
-                      <p style={mainTextStyle}>
+                      {/**<p style={mainTextStyle}>
                         This book contains a collection of some of the most common Irish Proverbs
                         together with explanations and translations of each.
-                      </p>
+                        </p>**/}
                     </Col>
                     <Col lg="3" />
                   </Row>
+
+                  <Row>
+                      <Col lg="3" />
+                      <Col lg="6">
+                        <Banner />
+                      </Col>
+                      <Col lg="3" />
+                  </Row>
+
                 </div>
               </Container>
             </section>
             {/* 1st Hero Variation */}
           </div>
 
+          <section>
             <Container className="py-lg-md d-flex">
               <div className="col px-0">
                 <Row>
-                   <Col lg="3" />
-                    <Col lg="6">
-                      <Banner />
+                   <Col sm="1" />
+                    <Col lg="12">
+                      <ProverbGrid isLoading={isLoading.current} items={proverbArray} />
                     </Col>
-                    <Col lg="3" />
+                    <Col sm="1" />
                 </Row>
               </div>
             </Container>
-
-          <section>
-            <ProverbGrid isLoading={isLoading.current} items={proverbArray} />
           </section>
 
         {/**
