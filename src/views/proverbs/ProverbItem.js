@@ -1,6 +1,6 @@
 import React from 'react'
-
 import images from '../Images'
+import '../Cards.css'
 
 const ProverbItem = ({ item }) => {
 

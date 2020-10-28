@@ -149,7 +149,7 @@ class Landing extends React.Component {
             <ProverbGrid isLoading={isLoading.current} items={proverbArray} />
           </section>
 
-
+        {/**
           <section className="section section-lg pt-0">
             <Container>
               <Card className="bg-gradient-warning shadow-lg border-0">
@@ -181,6 +181,7 @@ class Landing extends React.Component {
               </Card>
             </Container>
           </section>
+           */}
 
 
         </main>
