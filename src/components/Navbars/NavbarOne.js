@@ -9,14 +9,9 @@ import amazonImg from '../../assets/img/stor/Amazon-btn.png';
 
 // reactstrap components
 import {
-  Button,
   UncontrolledCollapse,
-  DropdownMenu,
-  DropdownItem,
   DropdownToggle,
   UncontrolledDropdown,
-  Media,
-  NavbarBrand,
   Navbar,
   NavItem,
   NavLink,
@@ -64,21 +59,6 @@ class NavbarOne extends React.Component {
       marginTop: '0px',
       width: '90px'
     };
-
-    const headerStyle = {
-      color: '#fff',
-      textAlign: 'center',
-      padding: '10px'
-    }
-
-    const headerTextStyle = {
-      marginTop: '20px',
-      marginBottom: '20px',
-      fontSize: '50px',
-      textAlign: 'center',
-      color: '#f5d742',
-      textDecoration: 'none'
-    }
 
     return (
       <>
@@ -161,7 +141,7 @@ class NavbarOne extends React.Component {
                       href="https://www.facebook.com/seanfhocail.leabhar"
                       id="tooltip333589074" target="_blank"
                     >
-                      <img src={facebookImg} style={facebookStyle} />
+                      <img src={facebookImg} style={facebookStyle} alt='facebook' />
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip333589074">
                       Follow us on Facebook
