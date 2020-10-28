@@ -42,7 +42,8 @@ class Landing extends React.Component {
     const headerTextStyle = {
         marginTop: '0px',
         marginBottom: '20px',
-        fontSize: '50px',
+        fontSize: '53px',
+        //fontWeight: 'bold',
         textAlign: 'center',
         color: '#f5d742',
         textDecoration: 'none'
@@ -64,7 +65,7 @@ class Landing extends React.Component {
                     <Col lg="3" />
                     <Col lg="6">
                       <div style={headerStyle}>
-                        <p style={ headerTextStyle}>Stór Seanfhocal </p>
+                        <p style={headerTextStyle}>Stór Seanfhocal </p>
                       </div>
                     </Col>
                     <Col lg="3" />
@@ -74,7 +75,6 @@ class Landing extends React.Component {
                     <Col lg="6">
                       <h1 className="display-3 text-white">
                         A Collection of Irish Proverbs{" "}
-
                       </h1>
                       <p className="lead text-white">
                         This book contains a collection of some of the most common Irish Proverbs
