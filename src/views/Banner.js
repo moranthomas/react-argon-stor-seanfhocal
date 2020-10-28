@@ -5,7 +5,7 @@ import amazonImg from '../assets/img/stor/Amazon-btn.png';
 
 const amazonStyle = {
   float: 'center',
-  marginTop: '30px',
+  marginTop: '20px',
   width: '100px'
 };
 
@@ -25,7 +25,6 @@ const Banner = () => {
 const logoStyle = {
     marginLeft: '50px',
     marginBottom: '50px',
-    marginTop: '-50px',
     width: '400px',
     display: 'inline-block',
     alignItems: 'center',

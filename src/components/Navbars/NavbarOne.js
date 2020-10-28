@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Argon Design System React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import { Link } from "react-router-dom";
 // JavaScript plugin that hides or shows a component based on your scroll
@@ -42,7 +25,7 @@ import {
   UncontrolledTooltip
 } from "reactstrap";
 
-class DemoNavbar extends React.Component {
+class NavbarOne extends React.Component {
 
   componentDidMount() {
     let headroom = new Headroom(document.getElementById("navbar-main"));
@@ -73,6 +56,21 @@ class DemoNavbar extends React.Component {
       marginTop: '30px',
       width: '100px'
     };
+
+    const headerStyle = {
+      color: '#fff',
+      textAlign: 'center',
+      padding: '10px'
+    }
+
+    const headerTextStyle = {
+      marginTop: '20px',
+      marginBottom: '20px',
+      fontSize: '50px',
+      textAlign: 'center',
+      color: '#f5d742',
+      textDecoration: 'none'
+    }
 
     return (
       <>
@@ -165,9 +163,9 @@ class DemoNavbar extends React.Component {
                       </span>
                     </Button>
 
-                  <NavItem className="d-none d-lg-block ml-lg-4">
+                  {/**<NavItem className="d-none d-lg-block ml-lg-4">
                     <img src={amazonImg} style={amazonStyle}  alt='' />
-                  </NavItem>
+                  </NavItem>**/}
                 </Nav>
               </UncontrolledCollapse>
             </Container>
@@ -178,4 +176,4 @@ class DemoNavbar extends React.Component {
   }
 }
 
-export default DemoNavbar;
+export default NavbarOne;

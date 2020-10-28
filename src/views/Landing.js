@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* Argon Design System React - v1.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-design-system-react
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -30,7 +13,7 @@ import {
 } from "reactstrap";
 
 // core components
-import DemoNavbar from "components/Navbars/DemoNavbar.js";
+import Navbar from "components/Navbars/NavbarOne.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
 import Banner from "views/Banner.js";
 
@@ -50,17 +33,44 @@ class Landing extends React.Component {
       background: 'linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,121,113,1) 11%, rgba(0,255,246,0) 35%)',
     };
 
+    const headerStyle = {
+      color: '#fff',
+      textAlign: 'center',
+      padding: '10px'
+    }
+
+    const headerTextStyle = {
+        marginTop: '0px',
+        marginBottom: '20px',
+        fontSize: '50px',
+        textAlign: 'center',
+        color: '#f5d742',
+        textDecoration: 'none'
+    }
+
+
     return (
       <>
-        <DemoNavbar />
+        <Navbar />
+
         <main ref="main" style ={ backgroundStyle}>
+
           <div className="position-relative" >
             {/* shape Hero */}
-            <section className="section section-lg section-shaped">
-
-              <Container className="py-lg-md d-flex">
+            <section className="section">
+              <Container>
                 <div className="col px-0">
                   <Row>
+                    <Col lg="3" />
+                    <Col lg="6">
+                      <div style={headerStyle}>
+                        <p style={ headerTextStyle}>Stór Seanfhocal </p>
+                      </div>
+                    </Col>
+                    <Col lg="3" />
+                  </Row>
+                  <Row>
+                    <Col lg="3" />
                     <Col lg="6">
                       <h1 className="display-3 text-white">
                         A Collection of Irish Proverbs{" "}
@@ -71,6 +81,7 @@ class Landing extends React.Component {
                         together with explanations and translations of each.
                       </p>
                     </Col>
+                    <Col lg="3" />
                   </Row>
                 </div>
               </Container>
@@ -81,9 +92,11 @@ class Landing extends React.Component {
             <Container className="py-lg-md d-flex">
               <div className="col px-0">
                 <Row>
-                  <Col lg="1">
-                  <Banner />
-                  </Col >
+                   <Col lg="3" />
+                    <Col lg="6">
+                      <Banner />
+                    </Col>
+                    <Col lg="3" />
                 </Row>
               </div>
             </Container>
