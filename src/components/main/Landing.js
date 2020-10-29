@@ -2,8 +2,6 @@ import React from "react";
 
 // reactstrap components
 import {
-  Button,
-  Card,
   Container,
   Row,
   Col
@@ -13,7 +11,7 @@ import {
 import Navbar from "components/Navbars/NavbarOne.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
 import Banner from "views/Banner.js";
-import ProverbGrid from "./proverbs/ProverbGrid";
+import ProverbGrid from "../../views/proverbs/ProverbGrid";
 
 
 class Landing extends React.Component {
@@ -89,13 +87,6 @@ class Landing extends React.Component {
       textAlign: 'center'
     };
 
-    var mainTextStyle = {
-      marginTop: '20px',
-      textAlign: 'center',
-      fontSize: '20px',
-      color: 'white'
-    };
-
     return (
       <>
         <Navbar />
@@ -122,10 +113,6 @@ class Landing extends React.Component {
                       <h2 style={h2Style}>
                         A Collection of Irish Proverbs beautifully illustrated along with explanations and translations of each
                       </h2>
-                      {/**<p style={mainTextStyle}>
-                        This book contains a collection of some of the most common Irish Proverbs
-                        together with explanations and translations of each.
-                        </p>**/}
                     </Col>
                     <Col lg="3" />
                   </Row>
@@ -194,6 +181,14 @@ class Landing extends React.Component {
 
 
         </main>
+
+        <section>
+          <span>
+            <br />
+            <br />
+          </span>
+        </section>
+
         <SimpleFooter />
       </>
     );

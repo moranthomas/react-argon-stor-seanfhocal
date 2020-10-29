@@ -6,8 +6,8 @@ import "assets/vendor/nucleo/css/nucleo.css";
 import "assets/vendor/font-awesome/css/font-awesome.min.css";
 import "assets/scss/argon-design-system-react.scss?v1.1.0";
 
-import Home from "views/Home.js";
-import Landing from "views/Landing.js";
+import Home from "components/main/Home.js";
+import Landing from "components/main/Landing.js";
 
 ReactDOM.render(
   <BrowserRouter>

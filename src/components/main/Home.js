@@ -8,9 +8,9 @@ import Navbar from "components/Navbars/NavbarOne.js";
 import SimpleFooter from "components/Footers/SimpleFooter.js";
 
 // index page sections
-import Hero from "./IndexSections/Hero.js";
-import Navbars from "./IndexSections/Navbars.js";
-import Tabs from "./IndexSections/Tabs.js";
+import Hero from "../../views/IndexSections/Hero.js";
+import Navbars from "../../views/IndexSections/Navbars.js";
+import Tabs from "../../views/IndexSections/Tabs.js";
 
 class Home extends React.Component {
 

@@ -13,15 +13,21 @@ import {
 } from "reactstrap";
 
 class SimpleFooter extends React.Component {
+
   render() {
+
+    const footStyle = {
+      marginTop: '100px;'
+    };
+
     return (
       <>
         <footer className="footer">
-          <Container>
+          <Container style={footStyle}>
             <Row className="row-grid align-items-center mb-5">
               <Col lg="6">
                 <h5 className=" mb-0 font-weight-light">
-                  Hover over the images to see samples!
+                  Scroll over the images to see some examples!
                 </h5>
               </Col>
               <Col className="text-lg-center btn-wrapper" lg="6">
