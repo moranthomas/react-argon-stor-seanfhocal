@@ -93,6 +93,7 @@ class NavbarOne extends React.Component {
                           alt="..."
                           src={require("assets/img/stor/gaeilge.jpg")}
                         />
+                         <p> Stór Seanfhocal </p>
                       </Link>
                     </Col>
                     <Col className="collapse-close" xs="6">

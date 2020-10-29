@@ -1,0 +1,32 @@
+.amazonStyle {
+    float: center;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 150px;
+}
+
+.frontCoverStyle {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    width: 400px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 800px) {
+    .frontCoverStyle {
+        margin-left: 0px;
+        width: 330px;
+    }
+    .amazonStyle {
+      margin-left: 90px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
