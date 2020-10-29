@@ -81,7 +81,7 @@ class Landing extends React.Component {
     };
 
     var h2Style = {
-      fontSize: '20px',
+      fontSize: '19px',
       color: 'white',
       marginBottom: '20px',
       textAlign: 'center'
@@ -111,7 +111,7 @@ class Landing extends React.Component {
                     <Col lg="3" />
                     <Col lg="6" style={h2Style}>
                       <h2 style={h2Style}>
-                        A Collection of Irish Proverbs beautifully illustrated along with explanations and translations of each
+                        A Collection of Irish Proverbs each one beautifully illustrated together with explanations and translations
                       </h2>
                     </Col>
                     <Col lg="3" />

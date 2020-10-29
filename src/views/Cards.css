@@ -18,17 +18,16 @@
 }
 
 
-
-
 .proverbCard {
   cursor: pointer;
   background-color: transparent;
-  height: 300px;
+  height: 320px;
   perspective: 1000px;
 }
 
 .proverbCard h1 {
-  font-size: 20px;
+  font-size: 17px;
+  color: white;
   border-bottom: 1px #f5d742 solid;
   padding-bottom: 10px;
   margin-bottom: 10px;
@@ -36,7 +35,7 @@
 
 .proverbCard img {
   width: 260px;
-  height: 300px;
+  height: 320px;
   object-fit: cover;
 }
 
@@ -62,13 +61,15 @@
 }
 
 .proverbCard-back {
+  font-size: 14px;
   background-color: #333;
   color: white;
   padding: 20px;
   transform: rotateY(180deg);
 }
 
-.proverbCard li {
+/*.proverbCard-back li {
   list-style: none;
   padding-bottom: 10px;
-}
+  padding-left: -20px;
+}*/

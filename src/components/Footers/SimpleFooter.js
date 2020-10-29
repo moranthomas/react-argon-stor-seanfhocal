@@ -27,7 +27,7 @@ class SimpleFooter extends React.Component {
             <Row className="row-grid align-items-center mb-5">
               <Col lg="6">
                 <h5 className=" mb-0 font-weight-light">
-                  Scroll over the images to see some examples!
+                  Scroll over images above to see some examples!
                 </h5>
               </Col>
               <Col className="text-lg-center btn-wrapper" lg="6">
@@ -91,14 +91,6 @@ class SimpleFooter extends React.Component {
               </Col>
               <Col md="6">
                 <Nav className=" nav-footer justify-content-end">
-                  <NavItem>
-                    <NavLink
-                      href="https://www.optimizme.com"
-                      target="_blank"
-                    >
-                      About Us
-                    </NavLink>
-                  </NavItem>
                   <NavItem>
                     <NavLink
                       href="https://github.com/git/git-scm.com/blob/master/MIT-LICENSE.txt"
