@@ -152,26 +152,11 @@ class NavbarOne extends React.Component {
 
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                   <NavItem>
-                    <NavLink>
+                    <NavLink href="https://www.amazon.com/gp/product/0955436869" target="_blank">
                       <img src={amazonImg} style={amazonStyle}  alt='' />
                     </NavLink>
                   </NavItem>
                 </Nav>
-                {/**
-                 <Nav>
-                  <span> </span>
-                  <Button
-                      className="btn-neutral btn-icon"
-                      color="default"
-                      href="https://www.amazon.com"
-                      target="_blank"
-                    >
-                    <span className="nav-link-inner--text ml-1">
-                      Buy Now
-                    </span>
-                  </Button>
-                </Nav>
-                **/}
               </UncontrolledCollapse>
               </Col>
                 <Col lg="2"></Col>

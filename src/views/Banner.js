@@ -14,7 +14,9 @@ const Banner = () => {
       <Row>
           <Col lg="3" />
           <Col lg="6">
-            <img src={amazonImg} className='amazonStyle'  alt='' />
+            <a href="https://www.amazon.com/gp/product/0955436869" target="_blank">
+              <img src={amazonImg} className='amazonStyle'  alt='' />
+            </a>
           </Col>
           <Col lg="3" />
       </Row>
