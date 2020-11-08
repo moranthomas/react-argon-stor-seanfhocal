@@ -152,7 +152,7 @@ class NavbarOne extends React.Component {
 
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                   <NavItem>
-                    <NavLink href="https://www.amazon.com/gp/product/0955436869" target="_blank">
+                    <NavLink href="https://www.amazon.co.uk/dp/0955436869" target="_blank">
                       <img src={amazonImg} style={amazonStyle}  alt='' />
                     </NavLink>
                   </NavItem>

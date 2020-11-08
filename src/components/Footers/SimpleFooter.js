@@ -26,9 +26,6 @@ class SimpleFooter extends React.Component {
           <Container style={footStyle}>
             <Row className="row-grid align-items-center mb-5">
               <Col lg="6">
-                <h5 className=" mb-0 font-weight-light">
-                  Scroll over images above to see some examples!
-                </h5>
               </Col>
               <Col className="text-lg-center btn-wrapper" lg="6">
                 <Button
