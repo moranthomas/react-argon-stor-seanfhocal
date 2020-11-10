@@ -8,12 +8,14 @@ import "assets/scss/argon-design-system-react.scss?v1.1.0";
 
 import Home from "components/main/Home.js";
 import Landing from "components/main/Landing.js";
+import Author from "views/Author.js";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/"     exact render={props => <Landing {...props} />} />
-      <Route path="/home" exact render={props => <Home {...props} />} />
+      <Route path="/home" exact render={props => <Landing {...props} />} />
+      <Route path="/author" exact render={props => <Author {...props} />} />
       <Redirect to="/" />
     </Switch>
   </BrowserRouter>,

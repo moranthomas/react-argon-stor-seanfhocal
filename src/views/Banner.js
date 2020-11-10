@@ -7,7 +7,6 @@ import './Banner.css';
 const textStyle = {
   float: 'center',
   marginTop: '40px',
-  //width: '200px',
   fontSize: '17px',
   marginBottom: '20px',
   textAlign: 'center'
