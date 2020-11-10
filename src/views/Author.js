@@ -31,6 +31,7 @@ import {
 import Navbar from "../components/Navbars/NavbarOne.js";
 import profileImg from '../assets/img/stor/dad-profile-photo.png';
 import SimpleFooter from '../components/Footers/SimpleFooter.js';
+import './Author.css';
 
 class Profile extends React.Component {
   render() {
@@ -55,15 +56,6 @@ class Profile extends React.Component {
         color: '#f5d742',
         textDecoration: 'none'
     };
-
-    const profileImgStyle = {
-        float: 'center',
-        marginTop: '40px',
-        textAlign: 'center',
-        marginBottom: '30px',
-        marginLeft: '-70px',
-        width: '240px'
-      };
 
     return (
       <>
@@ -90,15 +82,17 @@ class Profile extends React.Component {
                         <Row className="justify-content-center">
                         <Col className="order-lg-2" lg="3">
                             <div className="card-profile-image">
-                                <img src={profileImg} style={profileImgStyle} className='rounded-circle'  alt='' />
+                                <img src={profileImg} className='profileImgStyle rounded-circle'  alt='' />
                             </div>
                         </Col>
                         </Row>
+
                         <CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
                         <div className="d-flex justify-content-between">
 
                         </div>
                         </CardHeader>
+
                         <CardBody className="pt-0 pt-md-4">
                         <div className="text-center">
                             <h3>

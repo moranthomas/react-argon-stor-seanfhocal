@@ -1,0 +1,21 @@
+.profileImgStyle {
+    float: center;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: -70px;
+    width: 240px;
+};
+
+
+@media (max-width: 500px) {
+    .profileImgStyle {
+      margin-left: 70px;
+    }
+}
+
+@media (max-width: 800px) {
+    .profileImgStyle {
+        margin-left: 50px;
+    }
+}
