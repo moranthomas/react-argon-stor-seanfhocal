@@ -12,20 +12,6 @@ Ar ndoigh, tuigeann se tabhacht agus fiuntas na seanfhocal maraon leis an ghaois
 
 - Nollaig Heuston, Iar-Roinnchigire na Roinne Oideachais agus Scileanna
 
-/*
-
-
-/* ENGLISH
-
-Tomas has been plowing Gort na Gaeilge for a long time. He was a primary school principal for forty-five years. He has experience of teaching primary school students, secondary school students, student teachers and university students.
-
-He holds a B.A, Higher Certificate in Irish, M.Ed, and Higher Certificate in Education (Honors Permission).
-
-He now works for Our Lady of Marino College and Hibernia College. He lectured for the Diploma in Irish at the University of Galway for sixteen years.
-
-Tomas has served as a Principal in Colleges in the various Gaeltachts for many years, most recently at Coláiste Gharumna, Tir and Fhia for ten years.
-
-- Nollaig Heuston,- Former Inspector of the Department of Education and Skills
 */
 
 
@@ -41,8 +27,10 @@ import {
   Row,
   Col
 } from "reactstrap";
-// core components
+
 import Navbar from "../components/Navbars/NavbarOne.js";
+import profileImg from '../assets/img/stor/dad-profile-photo.png';
+import SimpleFooter from '../components/Footers/SimpleFooter.js';
 
 class Profile extends React.Component {
   render() {
@@ -51,84 +39,124 @@ class Profile extends React.Component {
        background: 'linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,121,113,1) 11%, rgba(0,255,246,0) 35%)',
     };
 
+    const headerStyle = {
+        color: '#fff',
+        textAlign: 'center',
+        padding: '30px',
+        marginTop: '30px'
+      };
+
+    const headerTextStyle = {
+        marginTop: '30px',
+        marginBottom: '10px',
+        fontSize: '53px',
+        fontWeight: '500',
+        textAlign: 'center',
+        color: '#f5d742',
+        textDecoration: 'none'
+    };
+
+    const profileImgStyle = {
+        float: 'center',
+        marginTop: '40px',
+        textAlign: 'center',
+        marginBottom: '30px',
+        marginLeft: '-70px',
+        width: '240px'
+      };
+
     return (
       <>
         <Navbar />
 
         <main ref="main" style ={ backgroundStyle}>
         {/* Page content */}
-        <Container className="mt--7" fluid>
-          <Row>
-            <Col className="order-xl-2 mb-5 mb-xl-0" xl="4">
-              <Card className="card-profile shadow">
-                <Row className="justify-content-center">
-                  <Col className="order-lg-2" lg="3">
-                    <div className="card-profile-image">
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
-                        <img
-                          alt="..."
-                          className="rounded-circle"
-                          src={require("assets/img/theme/team-4-800x800.jpg")}
-                        />
-                      </a>
-                    </div>
-                  </Col>
+
+        <Container>
+            <div className="col px-0">
+                <Row>
+                    <Col lg="3" />
+                    <Col lg="6">
+                        <div style={headerStyle}>
+                        <p style={headerTextStyle}>Stór Seanfhocal </p>
+                        </div>
+                    </Col>
+                    <Col lg="3" />
                 </Row>
-                <CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-                  <div className="d-flex justify-content-between">
-                    <Button
-                      className="mr-4"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                      size="sm"
-                    >
-                      Connect
-                    </Button>
-                    <Button
-                      className="float-right"
-                      color="default"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                      size="sm"
-                    >
-                      Message
-                    </Button>
-                  </div>
-                </CardHeader>
-                <CardBody className="pt-0 pt-md-4">
+                <Row>
+                <Col lg="3" />
+               <Col lg="6" >
+                    <Card className="card-profile shadow">
+                        <Row className="justify-content-center">
+                        <Col className="order-lg-2" lg="3">
+                            <div className="card-profile-image">
+                                <img src={profileImg} style={profileImgStyle} className='rounded-circle'  alt='' />
+                            </div>
+                        </Col>
+                        </Row>
+                        <CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+                        <div className="d-flex justify-content-between">
 
-                  <div className="text-center">
-                    <h3>
-                      Jessica Jones
-                      <span className="font-weight-light">, 27</span>
-                    </h3>
-                    <div className="h5 font-weight-300">
-                      <i className="ni location_pin mr-2" />
-                      Bucharest, Romania
-                    </div>
-                    <div className="h5 mt-4">
-                      <i className="ni business_briefcase-24 mr-2" />
-                      Solution Manager - Creative Tim Officer
-                    </div>
-                    <div>
-                      <i className="ni education_hat mr-2" />
-                      University of Computer Science
-                    </div>
-                    <hr className="my-4" />
-                    <p>
-                      Ryan — the name taken by Melbourne-raised, Brooklyn-based
-                      Nick Murphy — writes, performs and records all of his own
-                      music.
-                    </p>
+                        </div>
+                        </CardHeader>
+                        <CardBody className="pt-0 pt-md-4">
+                        <div className="text-center">
+                            <h3>
+                            Tomás P. Ó Móráin
+                            </h3>
+                            <div className="h5 font-weight-300">
+                            <i className="ni location_pin mr-2" />
+                            B.A, HDip.Ed, M.Ed
+                            </div>
 
-                  </div>
-                </CardBody>
-              </Card>
-            </Col>
+                            <div>
+
+                                <hr className="my-4" />
+
+                                <p>
+                                "Tomas has been plowing Gort na Gaeilge for a long time. He was a primary school principal for forty-five years. He has experience of teaching primary school students, secondary school students, student teachers and university students.
+                                </p>
+
+                               <p>
+                                He holds a B.A, Higher Certificate in Irish, M.Ed, and Higher Certificate in Education (Honors Level). </p>
+                               <p>
+                                He now works for Our Lady of Marino College and Hibernia College. He lectured for the Diploma in Irish at the University of Galway for sixteen years.
+                                </p>
+                                <p>
+                                Tomas has served as a Principal in Colleges in the various Gaeltachts for many years, most recently at Coláiste Gharumna, Tir an Fhia for ten years.""
+                                </p>
+
+                                <hr className="my-4" />
+
+                                <div className="h6 mt-4">
+                                <i className="ni business_briefcase-24 mr-2" />
+                                - Nollaig Heuston
+                                </div>
+                                <div>
+                                <i className="ni education_hat mr-2" />
+                                Former Inspector of the Department of Education and Skills
+                                </div>
+                            </div>
+
+                        </div>
+                        </CardBody>
+                    </Card>
+                    </Col>
+                    <Col lg="3" />
           </Row>
+            </div>
         </Container>
         </main>
+
+        <section>
+          <span>
+            <br />
+            <br />
+          </span>
+        </section>
+
+        <SimpleFooter />
+
       </>
     );
   }
