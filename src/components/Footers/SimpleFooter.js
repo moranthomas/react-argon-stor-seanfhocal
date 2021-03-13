@@ -17,7 +17,7 @@ class SimpleFooter extends React.Component {
   render() {
 
     const footStyle = {
-      marginTop: '100px;'
+      marginTop: '100px'
     };
 
     return (
