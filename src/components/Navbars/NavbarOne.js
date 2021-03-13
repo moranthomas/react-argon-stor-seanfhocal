@@ -104,6 +104,15 @@ class NavbarOne extends React.Component {
                     </Col>
                   </Row>
                 </div>
+
+                <Nav className="navbar-nav-hover align-items-lg-center" navbar>
+                  <NavItem>
+                    <NavLink href="/" >
+                      <span className="nav-link-inner--text"></span>
+                    </NavLink>
+                  </NavItem>
+                </Nav>
+
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                   <NavItem>
                     <NavLink href="/home" >
@@ -111,14 +120,6 @@ class NavbarOne extends React.Component {
                       <span className="nav-link-inner--text">Home</span>
                     </NavLink>
                   </NavItem>
-                </Nav>
-                <Nav className="navbar-nav-hover align-items-lg-center" navbar>
-                  <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
-                      <i className="ni ni-collection d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">About</span>
-                    </DropdownToggle>
-                  </UncontrolledDropdown>
                 </Nav>
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                   <NavItem>

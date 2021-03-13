@@ -77,9 +77,9 @@ class Reviews extends React.Component {
 
                         <CardBody className="pt-0 pt-md-4">
                         <div className="text-center">
-                            <h3>
-                            Testimonials
-                            </h3>
+                            <h1>
+                            Book Reviews
+                            </h1>
 
                             <div>
                                 <hr className="my-4" />
