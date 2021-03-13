@@ -1,5 +1,5 @@
 {
-  "name": "Stor SeanFhocal",
+  "name": "stor-seanfhocal",
   "version": "1.1.0",
   "description": "Irish Proverbs Site - Stor SeanFhocal",
   "main": "index.js",
@@ -18,6 +18,7 @@
     "argon-design-system-react",
     "design-system-react"
   ],
+  "license": "MIT",
   "homepage": "",
   "scripts": {
     "start": "react-scripts start",
